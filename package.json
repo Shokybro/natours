@@ -1,0 +1,23 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shokybro/natours.git"
+  },
+  "author": "Shohjaxon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shokybro/natours/issues"
+  },
+  "homepage": "https://github.com/Shokybro/natours#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.32.11"
+  }
+}
