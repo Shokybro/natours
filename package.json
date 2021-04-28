@@ -16,7 +16,6 @@
     "url": "https://github.com/Shokybro/natours/issues"
   },
   "homepage": "https://github.com/Shokybro/natours#readme",
-  "dependencies": {},
   "devDependencies": {
     "sass": "^1.32.11"
   }
