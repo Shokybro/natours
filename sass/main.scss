@@ -16,6 +16,7 @@ body {
     padding: 20px;
     color: $color-grey-dark;
     font-family: Arial, Helvetica, sans-serif;
+    height: 400vh;
 }
 .header {
     height: 95vh;
@@ -61,6 +62,7 @@ body {
         letter-spacing: 40px;
         animation: moveinleft 1s ease-in forwards;
         font-weight: 100;
+        text-transform: uppercase;
 
         @keyframes moveinleft {
             0% {
@@ -215,7 +217,7 @@ body {
                 border-radius: 3px;
                 position: absolute;
                 z-index: 10;
-                outline-offset: 0;
+                outline-offset: 15px;
                 transition: all .2s;
 
                 &:hover {
@@ -223,7 +225,6 @@ body {
                     transform: scale(1.05) translateY(-5px);
                     box-shadow: 0 15px 40px rgba($color-black, .5);
                     outline: 10px solid $color-primary;
-                    outline-offset: 15px;
                 }
             }
             .comp--photo-1 {
@@ -241,8 +242,33 @@ body {
             &:hover &_photo:not(:hover) {
                 transform: scale(0.95);
             }
-
-            
         }
     }
+}
+.card-list {
+    width: 100%;
+    position: relative;
+     & .card-front {
+         background-color: blue;
+     }
+     & .card-back {
+         background-color: red;
+         transform: rotateY(180deg);
+     }
+     .side {
+         transition: all .8s;
+         backface-visibility: hidden;
+         height: 200px;
+         width: 200px;
+         position: absolute;
+         top: 0;
+         left: 0;
+         overflow: hidden;
+     }
+     &:hover .card-front {
+         transform: rotateY(180deg);
+     }
+     &:hover .card-back {
+         transform: rotateY(0deg);
+     }
 }
