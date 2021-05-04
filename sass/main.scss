@@ -169,7 +169,7 @@ body {
         // background-color: red;
         height: auto;
         position: relative;
-        left: 200px;
+        left: 100px;
         & .heading-third {
             font-size: $defult-font-size;
             font-weight: 700;
@@ -288,3 +288,39 @@ body {
         }
     }
 }
+.buy-list {
+    width: 100%;
+    position: relative;
+    top: 100px;
+
+    & .card-front {
+        background-color: red;
+    }
+    & .card-back {
+        background-color: blue;
+        transform: rotateY(180deg);
+    }
+    & .side {
+        transition: all .8s;
+        backface-visibility: hidden;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden; 
+        perspective: 10px;
+    }
+    &:hover .card-front {
+        transform: rotateY(180deg);
+    }
+    &:hover .card-back {
+        transform: rotateY(0);
+    }
+}
+
+/* homework
+1. Discover all section (1-2 hours)
+2. Intex footer (10 - 20 minutes)
+3. Grid (100 - 200 hours) 
+*/ 
